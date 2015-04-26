@@ -46,6 +46,7 @@ def main():
             path = os.path.join(args.output_dir, input_path)
             with open(path, "w") as of:
                 of.write(result)
+        break  # just want the top level dir
 
 
 if __name__ == '__main__':
