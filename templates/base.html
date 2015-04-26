@@ -27,6 +27,7 @@
                                     Item Name
                                 </td>
                             </tr>
+                            {% block overview_table %}
                             <tr>
                                 <th class="text-right">Condition:</th>
                                 <td>
@@ -43,6 +44,7 @@
                                     <span class="label label-primary">See Description</span>
                                 </td>
                             </tr>
+                            {% endblock %}
                         </tbody>
                     </table>
                 </div>
@@ -52,6 +54,8 @@
 
             <h3><span class="glyphicon glyphicon-folder-close"></span> Packaging</h3>
             <p>We package all our items carefully to ensure they arrive safely. Please contact us if you have questions about packaging standards.</p>
+            {% block packaging_details %}
+            {% endblock %}
             <h3><span class="glyphicon glyphicon-envelope"></span> Shipments</h3>
             <h4><span class="glyphicon glyphicon-time"></span> Handling</h4>
             <p>We will ship all orders within <mark>1 business day</mark> of payment.</p>
@@ -71,6 +75,8 @@
                 </div>
             </div>
             <p>We tend to favor USPS. Check shipping tab for exact details.</p>
+            <h4><span class="glyphicon glyphicon-plus-sign"></span> Combined Shipping</h4>
+            <p>If you buy multiple items, please send us a message about combining shipping, and we will send you a combined invoice for all items.</p>
             <h3><span class="glyphicon glyphicon-ok-circle"></span> Return Policy</h3>
             <p>All of our items are backed by eBay's 14-day return policy. <mark>Buyer is responsible for return shipping</mark>.</p>
             <h3><span class="glyphicon glyphicon-comment"></span> Feedback</h3>

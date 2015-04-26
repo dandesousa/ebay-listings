@@ -1,0 +1,80 @@
+{% extends "base.html" %}
+{% block overview_table %}
+<tr>
+    <th class="text-right">Set:</th>
+    <td>
+        Set Name
+    </td>
+</tr>
+<tr>
+    <th class="text-right">Rarity:</th>
+    <td>
+        <span class="label label-success">Holo</span>
+        <span class="label label-primary">Rare</span>
+        <span class="label label-info">Uncommon</span>
+        <span class="label label-default">Common</span>
+    </td>
+</tr>
+<tr>
+    <th class="text-right">Condition:</th>
+    <td>
+        <span class="label label-success">Mint</span>
+        <span class="label label-primary">Near Mint</span>
+        <span class="label label-info">Played</span>
+    </td>
+</tr>
+<tr>
+    <th class="text-right">First Edition:</th>
+    <td>
+        <span class="label label-success">Yes</span>
+        <span class="label label-info">No</span>
+    </td>
+</tr>
+{% endblock %}
+
+{% block packaging_details %}
+<div class="media">
+    <div class="media-left">
+        <a href="#">
+            <img class="media-object" src="https://raw.githubusercontent.com/dandesousa/ebay-listings/master/imgs/sleeves.png" height="50px">
+        </a>
+    </div>
+    <div class="media-body">
+        <h4 class="media-heading">Card Sleeves</h4>
+        All individually sold cards, including rares and holo's come in card sleeves.
+    </div>
+</div>
+<div class="media">
+    <div class="media-left">
+        <a href="#">
+            <img class="media-object" src="https://raw.githubusercontent.com/dandesousa/ebay-listings/master/imgs/toploaders.jpg" height="50px">
+        </a>
+    </div>
+    <div class="media-body">
+        <h4 class="media-heading">Top Loaders</h4>
+        All sleeved, individually sold cards, including rares and holo's come in a top loader.
+    </div>
+</div>
+<div class="media">
+    <div class="media-left">
+        <a href="#">
+            <img class="media-object" src="https://raw.githubusercontent.com/dandesousa/ebay-listings/master/imgs/teambags.jpg" height="50px">
+        </a>
+    </div>
+    <div class="media-body">
+        <h4 class="media-heading">Team Bags</h4>
+        All non-boxed card batches come in team bags to protect from moisture and jostling.
+    </div>
+</div>
+<div class="media">
+    <div class="media-left">
+        <a href="#">
+            <img class="media-object" src="https://raw.githubusercontent.com/dandesousa/ebay-listings/master/imgs/polymailers.jpg" height="50px">
+        </a>
+    </div>
+    <div class="media-body">
+        <h4 class="media-heading">Bubble Mailers</h4>
+        All non-boxed cards are shipped in poly bubble mailers, non-machinable so they arrive without being bent.
+    </div>
+</div>
+{% endblock %}
