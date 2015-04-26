@@ -38,7 +38,7 @@ def main():
 
     for dirpath, dirnames, filenames in os.walk(args.template_dir):
         for filename in filenames:
-            if filename.endswith(".swp"):
+            if not filename.endswith(".html"):
                 continue
             input_path = filename
             template = env.get_template(input_path)
